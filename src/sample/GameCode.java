@@ -23,6 +23,6 @@ public class GameCode extends Application
     public static void main(String[] args)
     {
         launch(args);
-        new BackEnd(10);
+        new BackEnd(1);
     }
 }

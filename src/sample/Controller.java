@@ -11,11 +11,16 @@ public class Controller
     private Label label;
 
     @FXML
-    private Button button;
+    private Button button1, button2;
+    private int score;
 
-    private static int num = 0;
-    public static void click(ActionEvent actionEvent)
+    public void click(ActionEvent actionEvent)
     {
-        num++;
+        score++;
+    }
+
+    public void total(ActionEvent actionEvent)
+    {
+        button2.setText(Integer.toString(score));
     }
 }

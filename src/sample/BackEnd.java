@@ -10,8 +10,7 @@ public class BackEnd
     public BackEnd(int num)
     {
         time = new Timer();
-        time.schedule(new RemindTask(), num*1000);
-        System.out.println("Time is " + time);
+        time.schedule(new RemindTask(), 0);
     }
 
     class RemindTask extends TimerTask
